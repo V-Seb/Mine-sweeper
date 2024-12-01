@@ -1,1 +1,71 @@
+body {
+    font-family: "cursive", Brush Script MT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(233, 158, 213);
+}
 
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cell.revealed {
+    background-color: #fff;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #c5aded;
+}
+
+.cell.flagged {
+    background-color: #c7d7a9;
+}
+
+
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 8px #4c4567;
+}
+
+button {
+    background-color: rgb(214, 43, 226);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 8px #4c4567;
+}
+
+#resetButton {
+    color: aliceblue;
+    text-shadow: 2px 2px 8px #4c4567;
+}
+
+button:hover {
+    background-color: #4c4567;
+}
