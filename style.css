@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin-bottom: 50px;
     background-color: rgb(233, 158, 213);
 }
 
@@ -17,7 +17,7 @@ body {
     grid-template-columns: repeat(10, 40px);
     grid-template-rows: repeat(10, 40px);
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
